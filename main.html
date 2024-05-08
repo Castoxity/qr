@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qr</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <div class="parent">
         <div class="top">
-            <h2 id="ez">EZK</h2>
+            <h1 id="ezk">ezk</h1>
         </div>
-        <div class="heading">
-            <h3>Enter your url</h3>
-        </div>
-        <div class="input">
-
+        <div class="box">
+            <div class="heading">
+                <h3>Enter your url</h3>
+            </div>
+            <div class="input">
+                <form action="#">
+                <input type="url" spellcheck="false" id="text">
+                <button type="button" id="generate">Enter</button>
+                </form>
+            </div>
+            <div class="image">
+                <img class="qrcode">
+            </div>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
