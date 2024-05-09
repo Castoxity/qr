@@ -15,7 +15,7 @@ btn.addEventListener('click', async (e) => {
         let bgColor = 'rgba(0, 0, 0, 0)'; // Fully transparent background
 
         // Construct the QR code URL with transparent background
-        let qr = `https://quickchart.io/qr?text=${encodeURIComponent(text)}&bgcolor=${bgColor}`;
+        let qr = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(text)}&bgcolor=${bgColor}`;
 
         // Set the QR code source
         qrcode.src = qr;
